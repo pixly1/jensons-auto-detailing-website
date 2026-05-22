@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jensen Auto Detailing — Spring Hill · Murfreesboro · Columbia, TN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-brand"><img src="logo.png" alt="Jensen Auto Detailing" class="loader-logo"></div>
+    <div class="loader-bar-track">
+      <div id="loader-bar"></div>
+    </div>
+    <div id="loader-percent">0%</div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav>
+      <div class="nav-logo"><img src="logo.png" alt="Jensen Auto Detailing" class="nav-logo-img"></div>
+      <a href="tel:9319829320" class="nav-cta">(931) 982-9320</a>
+    </nav>
+  </header>
+
+  <!-- HERO — standalone 100vh, solid bg -->
+  <section class="hero-standalone" id="hero">
+    <div class="hero-content">
+      <span class="hero-label">Car Detailing · Spring Hill · Murfreesboro · Columbia, TN</span>
+      <h1 class="hero-heading">
+        <span class="hero-word">DIRTY</span>
+        <span class="hero-word hero-word-mid">TO</span>
+        <span class="hero-word hero-accent">SPOTLESS.</span>
+      </h1>
+      <p class="hero-sub">Jensen Auto Detailing — professional results on every vehicle, every time.</p>
+    </div>
+    <div class="scroll-hint">
+      <span class="scroll-hint-label">Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- CANVAS — fixed behind content -->
+  <div id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- LEFT GRADIENT — text-zone protection -->
+  <div id="left-gradient"></div>
+
+  <!-- DARK OVERLAY — for stats section -->
+  <div id="dark-overlay"></div>
+
+  <!-- WHITE OVERLAY — wipes in after stats, covers car for light-mode sections -->
+  <div id="white-overlay"></div>
+
+  <!-- MARQUEE 1 — services -->
+  <div class="marquee-wrap" id="marquee-1">
+    <p class="marquee-text">CAR DETAILING&nbsp;&nbsp;·&nbsp;&nbsp;WASH &amp; WAX&nbsp;&nbsp;·&nbsp;&nbsp;ENGINE BAY&nbsp;&nbsp;·&nbsp;&nbsp;TIRE SHINE&nbsp;&nbsp;·&nbsp;&nbsp;INTERIOR CLEAN&nbsp;&nbsp;·&nbsp;&nbsp;FREE ESTIMATES&nbsp;&nbsp;·&nbsp;&nbsp;CAR DETAILING&nbsp;&nbsp;·&nbsp;&nbsp;WASH &amp; WAX&nbsp;&nbsp;·&nbsp;&nbsp;ENGINE BAY&nbsp;&nbsp;·&nbsp;&nbsp;</p>
+  </div>
+
+  <!-- MARQUEE 2 — brand -->
+  <div class="marquee-wrap" id="marquee-2">
+    <p class="marquee-text">JENSEN AUTO DETAILING&nbsp;&nbsp;·&nbsp;&nbsp;SPRING HILL · MURFREESBORO · COLUMBIA, TN&nbsp;&nbsp;·&nbsp;&nbsp;(931) 982-9320&nbsp;&nbsp;·&nbsp;&nbsp;FREE ESTIMATES&nbsp;&nbsp;·&nbsp;&nbsp;JENSEN AUTO DETAILING&nbsp;&nbsp;·&nbsp;&nbsp;SPRING HILL · MURFREESBORO · COLUMBIA, TN&nbsp;&nbsp;·&nbsp;&nbsp;</p>
+  </div>
+
+  <!-- SECTIONS LAYER — fixed, GSAP-controlled -->
+  <div id="sections-layer">
+
+    <!-- 001 / The Work -->
+    <section class="scroll-section align-left"
+             data-enter="12" data-leave="30" data-animation="slide-left">
+      <div class="section-inner">
+        <span class="section-label">001 / The Work</span>
+        <h2 class="section-heading">THE DETAIL<br>DONE RIGHT.</h2>
+        <p class="section-body">Interior deep clean. Exterior wash &amp; wax. Engine bay detail. Tire shine. Professional results on every vehicle, every time.</p>
+      </div>
+    </section>
+
+    <!-- 002 / Any Vehicle -->
+    <section class="scroll-section align-left"
+             data-enter="35" data-leave="53" data-animation="slide-left">
+      <div class="section-inner">
+        <span class="section-label">002 / Any Vehicle</span>
+        <h2 class="section-heading">TRUCKS.<br>SPORTS CARS.<br>CLASSICS.</h2>
+        <p class="section-body">From a lifted F-150 to a vintage Bronco to a brand-new Camaro. If it's got wheels, we detail it right.</p>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="scroll-section section-stats"
+             data-enter="57" data-leave="72" data-animation="stagger-up">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-value-row">
+            <span class="stat-number" data-value="5" data-decimals="0">0</span>
+          </div>
+          <span class="stat-label">Star Detailing Services</span>
+        </div>
+        <div class="stat stat-divider">
+          <div class="stat-value-row">
+            <span class="stat-number" data-value="100" data-decimals="0">0</span><span class="stat-suffix">%</span>
+          </div>
+          <span class="stat-label">Satisfaction Guaranteed</span>
+        </div>
+        <div class="stat">
+          <div class="stat-value-row">
+            <span class="stat-text-big">FREE</span>
+          </div>
+          <span class="stat-label">Estimates — Always</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY / Client Results -->
+    <section class="scroll-section section-gallery"
+             data-enter="79" data-leave="91" data-animation="stagger-up">
+      <span class="section-label">CLIENT RESULTS / The Proof</span>
+      <h2 class="section-heading gallery-heading">BEFORE &amp;<br>AFTER.</h2>
+      <div class="gallery-scroll-wrap">
+        <div class="results-grid">
+          <div class="result-pair">
+            <div class="result-img result-before">
+              <img src="photos/IMG_1500.PNG" alt="Vehicle before detail">
+              <span class="result-tag">BEFORE</span>
+            </div>
+            <div class="result-img result-after">
+              <img src="photos/IMG_1502.PNG" alt="Vehicle after detail">
+              <span class="result-tag">AFTER</span>
+            </div>
+          </div>
+          <div class="result-pair">
+            <div class="result-img result-before">
+              <img src="photos/IMG_1504.PNG" alt="Detail in progress">
+              <span class="result-tag">IN PROGRESS</span>
+            </div>
+            <div class="result-img result-after">
+              <img src="photos/IMG_1505.PNG" alt="Finished detail">
+              <span class="result-tag">FINISHED</span>
+            </div>
+          </div>
+          <div class="result-pair">
+            <div class="result-img result-before">
+              <img src="photos/IMG_1506.PNG" alt="Vehicle before clean">
+              <span class="result-tag">BEFORE</span>
+            </div>
+            <div class="result-img result-after">
+              <img src="photos/IMG_1507.PNG" alt="Vehicle after clean">
+              <span class="result-tag">AFTER</span>
+            </div>
+          </div>
+          <div class="result-pair">
+            <div class="result-img result-before">
+              <img src="photos/IMG_1508.PNG" alt="Interior before clean">
+              <span class="result-tag">BEFORE</span>
+            </div>
+            <div class="result-img result-after">
+              <img src="photos/IMG_1509.PNG" alt="Interior after clean">
+              <span class="result-tag">AFTER</span>
+            </div>
+          </div>
+          <div class="result-pair">
+            <div class="result-img result-before">
+              <img src="photos/IMG_1510.PNG" alt="Vehicle before detail">
+              <span class="result-tag">BEFORE</span>
+            </div>
+            <div class="result-img result-after">
+              <img src="photos/IMG_1511.PNG" alt="Vehicle after detail">
+              <span class="result-tag">AFTER</span>
+            </div>
+          </div>
+          <div class="result-pair">
+            <div class="result-img result-before">
+              <img src="photos/IMG_1512.PNG" alt="Detail results">
+              <span class="result-tag">RESULTS</span>
+            </div>
+            <div class="result-img result-after">
+              <img src="photos/IMG_1513.PNG" alt="Completed detail">
+              <span class="result-tag">COMPLETED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 004 / CTA -->
+    <section class="scroll-section section-cta align-center"
+             data-enter="92" data-leave="101" data-animation="clip-reveal">
+      <div class="cta-inner">
+        <span class="section-label">004 / Get Started</span>
+        <h2 class="section-heading cta-heading">BOOK YOUR<br>FREE DETAIL.</h2>
+        <p class="section-body">Call or text to book your detail.</p>
+        <a href="tel:9319829320" class="cta-button">(931) 982-9320</a>
+        <p class="section-note">Spring Hill &nbsp;·&nbsp; Murfreesboro &nbsp;·&nbsp; Columbia, TN &nbsp;·&nbsp; Free Estimates</p>
+      </div>
+    </section>
+
+  </div><!-- #sections-layer -->
+
+  <!-- SCROLL SPACER — 900vh creates scroll distance for animations -->
+  <div id="scroll-container"></div>
+
+  <footer class="site-footer-credit">Built by Patterson Tech Web Services</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
